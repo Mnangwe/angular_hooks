@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { DoCheckComponent } from './do-check/do-check.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DoCheckComponent
+    BindingComponent,
   ],
   imports: [
     BrowserModule,

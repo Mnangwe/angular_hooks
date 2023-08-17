@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DoCheckComponent } from './do-check.component';
+import { BindingComponent } from './binding.component';
 
-describe('DoCheckComponent', () => {
-  let component: DoCheckComponent;
-  let fixture: ComponentFixture<DoCheckComponent>;
+describe('BindingComponent', () => {
+  let component: BindingComponent;
+  let fixture: ComponentFixture<BindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DoCheckComponent ]
+      declarations: [ BindingComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DoCheckComponent);
+    fixture = TestBed.createComponent(BindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
