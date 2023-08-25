@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-binding',
@@ -9,9 +9,16 @@ export class BindingComponent implements OnInit {
 
   btnStatus: any = "false"
 
+  @Output()
+  notify: EventEmitter<string> = new EventEmitter<string>() 
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+  }
+
+  handler(){
+    this.notify.emit("This is child's message!")
   }
 
 }

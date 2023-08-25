@@ -1,2 +1,5 @@
 <p>home works!</p>
-<app-binding></app-binding>
+<p>Money - {{ salary | currency :"INR":'code':'1.2-3' }}</p>
+<p>Data from Child - {{childData}}</p>
+<app-binding (notify)="parMethod($event)"></app-binding>
+

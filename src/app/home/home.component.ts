@@ -13,9 +13,18 @@ export class HomeComponent implements OnInit {
     name: "Lunje"
   }
 
+  
+  childData!: string;
+
+  salary : number = 200000
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
+  parMethod(data: string){
+    this.childData = data;
+  }
+  
 }
